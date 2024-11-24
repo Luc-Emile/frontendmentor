@@ -1,0 +1,110 @@
+/* #################################### Defaults #################################### */
+body {
+    background-color: #f3e5d8;
+    margin: 0;
+    font-family: Outfit, serif, sans-serif;
+    color: hsl(30, 10%, 34%);
+}
+
+.container {
+    width: 50%;
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 { width: 100%;}
+
+h1 {
+    font-family: 'Young Serif', serif, sans-serif;
+    color: hsl(14, 45%, 36%);
+}
+
+* {
+    box-sizing: border-box;
+} 
+/* #################################### Custom styles #################################### */
+
+.imageHeader img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.titleHeader h1 {
+    font-size: 45px;
+    text-align: left;
+    font-family: 'Young Serif', serif, sans-serif;
+    color: hsl(24, 5%, 18%);
+}
+
+.titleHeader p {
+    font-size: 15px;
+    
+}
+
+.preparationTime {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.preparationTime h2 {
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients ul li::marker,
+.instructions ol li::marker {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+}
+
+.ingredients ul li,
+.instructions ol li {
+    padding-left: 10px;
+}
+
+.nutrition table {
+    width: 100%;
+}
+
+tr, 
+td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition table tr td.lastCol {
+    color: hsl(332, 51%, 32%);
+    font-family: Outfit, serif, sans-serif;
+    font-weight: bold;
+}
+
+/* #################################### Mobile #################################### */
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .col-1 {
+        width: 100%;
+        margin: 10px;
+    }
+}
